@@ -1,0 +1,80 @@
+.page {
+  background-color: #f7f7f7;
+  width: 100%;
+  max-width: 500px;
+  padding: 0 20px;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.titleWrap {
+  font-weight: 700;
+  font-size: 26px;
+  margin-top: 87px;
+}
+
+.contentWrap {
+  margin-top: 26px;
+  flex: 1;
+}
+
+.inputTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.inputWrap {
+  /* display: flex; */
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 8px;
+  background-color: white;
+  border: 1px solid #e2e0e0;
+}
+.inputwrap:focus-within {
+  border: 1px solid #9e30f4;
+}
+.input {
+  border: none;
+  width: 100%;
+  outline: none;
+  height: 17px;
+  font-weight: 14px;
+  font-size: 400;
+  height: 17px;
+}
+
+.input::placeholder {
+  color: #dadada;
+}
+
+.errorMessageWrap {
+  margin-top: 8px;
+  color: #ef0000;
+  font-size: 12px;
+}
+
+.bottomButton {
+  width: 100%;
+  height: 48px;
+  border: none;
+  background-color: #9e30f4;
+  border-radius: 64px;
+  color: white;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.bottomButton:disabled {
+  background-color: #dadada;
+  color: white;
+}
